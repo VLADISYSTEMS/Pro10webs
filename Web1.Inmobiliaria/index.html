@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inmobiliaria 10 — Venta de propiedades en Bogotá</title>
+  <meta name="description" content="Inmobiliaria 10 — ofrecemos el mejor servicio en Bogotá. Propiedades en venta, asesoría y visitas programadas." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">10</div>
+        <div>
+          <h1>Inmobiliaria 10</h1>
+          <p>Venta de propiedades — Bogotá</p>
+        </div>
+      </div>
+      <nav>
+        <a class="ghost" href="#propiedades">Propiedades</a>
+        <a class="ghost" href="#servicios">Servicios</a>
+        <a class="ghost" href="#nosotros">Quiénes somos</a>
+        <a class="cta" href="#contacto">Agenda visita</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Encuentra tu próxima propiedad en Bogotá — Servicio personalizado</h2>
+        <p>Asesoría completa, visitas programadas y financiación. Hacemos sencillo el proceso de compra.</p>
+        <div class="search">
+          <input id="q" placeholder="Buscar barrio, referencia o código" />
+          <button id="btnSearch">Buscar</button>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+          <span class="small">Entrega inmediata</span>
+          <span class="small">Asesor virtual</span>
+          <span class="small">Visitas 7am–7pm</span>
+        </div>
+      </div>
+      <aside class="panel">
+        <h3 style="margin-top:0">Contáctanos</h3>
+        <p class="small">Tel/WhatsApp: <strong>+57 300 555 0101</strong></p>
+        <p class="small">Email: contacto@inmobiliaria10.co</p>
+        <p class="small">Dirección: Calle Falsa 123, Bogotá</p>
+        <div style="margin-top:12px">
+          <a class="cta" href="https://wa.me/573005550101" target="_blank">Enviar WhatsApp</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="propiedades">
+      <h3>Propiedades destacadas</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="photo_2025-10-29_22-08-33.jpg" alt="Apartamento en Chapinero" loading="lazy"/>
+          <div class="card-body">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:700">Apartamento — Chapinero</div>
+                <div class="meta">2 hab · 2 baños · 85 m²</div>
+              </div>
+              <div class="price">$380.000.000</div>
+            </div>
+            <p class="small" style="margin-top:10px">Moderno apartamento con excelente iluminación y vista. Cerca de transporte y servicios.</p>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <button class="ghost" onclick="openGallery('images/propiedad1.jpg')">Ver</button>
+              <a class="cta" href="#contacto">Agendar visita</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="photo_2025-10-29_22-08-52.jpg" alt="Casa en Suba" loading="lazy"/>
+          <div class="card-body">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:700">Casa — Suba</div>
+                <div class="meta">4 hab · 3 baños · 220 m²</div>
+              </div>
+              <div class="price">$820.000.000</div>
+            </div>
+            <p class="small" style="margin-top:10px">Amplios espacios, patio y garaje. Ideal para familia.</p>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <button class="ghost" onclick="openGallery('images/propiedad2.jpg')">Ver</button>
+              <a class="cta" href="#contacto">Agendar visita</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="photo_2025-10-29_22-19-18.jpg" alt="Local comercial en Teusaquillo" loading="lazy"/>
+          <div class="card-body">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:700">Local comercial — Teusaquillo</div>
+                <div class="meta">100 m² · Zona comercial</div>
+              </div>
+              <div class="price">$450.000.000</div>
+            </div>
+            <p class="small" style="margin-top:10px">Ubicación estratégica con alto flujo peatonal.</p>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <button class="ghost" onclick="openGallery('images/propiedad3.jpg')">Ver</button>
+              <a class="cta" href="#contacto">Agendar visita</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="two-cols" id="servicios">
+      <div class="panel">
+        <h3 id="nosotros">Quiénes somos</h3>
+        <p class="small">Inmobiliaria 10 es una agencia local en Bogotá con más de 10 años de experiencia ayudando a compradores y familias a encontrar el hogar ideal. Nuestro proceso combina asesoría humana con herramientas digitales para agilizar la búsqueda.</p>
+        <h4 style="margin-top:18px">Servicios</h4>
+        <ul style="padding-left:18px;color:var(--muted)">
+          <li>Venta y compra de inmuebles</li>
+          <li>Asesoría legal y financiera</li>
+          <li>Visitas programadas y atención personalizada</li>
+        </ul>
+      </div>
+      <aside class="panel">
+        <h4>Contacto rápido</h4>
+        <form id="contactForm" onsubmit="sendForm(event)">
+          <label for="name">Nombre</label>
+          <input id="name" required />
+          <label for="email">Correo</label>
+          <input id="email" type="email" required />
+          <label for="msg">Mensaje</label>
+          <textarea id="msg" rows="4" required></textarea>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <button class="btn-send" type="submit">Enviar</button>
+            <a class="ghost" href="https://wa.me/573005550101" target="_blank">WhatsApp</a>
+          </div>
+        </form>
+        <p class="small" style="margin-top:10px">(Simulación: el formulario no envía datos hasta conectar un backend)</p>
+      </aside>
+    </section>
+
+    <footer>
+      <div>© 2025 Inmobiliaria 10 — Bogotá • contacto@inmobiliaria10.co • +57 300 555 0101</div>
+    </footer>
+  </div>
+
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <img id="modalImg" src="" alt="" />
+  </div>
+
+  <!-- JS externo -->
+  <script src="script.js"></script>
+</body>
+</html>
